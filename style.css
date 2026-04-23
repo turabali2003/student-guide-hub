@@ -356,3 +356,42 @@ p {
         width: 250px;
     }
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
