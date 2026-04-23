@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<input type="text" id="searchInput" placeholder="Search guides...">
+<body>
+
+<header>
+    <h1>Student Guide Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="tabs-section">
+<h1>Student Resources</h1>
+
+<!-- MAIN TABS -->
+<div class="card">
+<div class="tabs">
+    <button class="tab-btn active" onclick="openTab(event, 'admission')">📘 Admission</button>
+    <button class="tab-btn" onclick="openTab(event, 'study')">📖 Study Tips</button>
+    <button class="tab-btn" onclick="openTab(event, 'course')">🎓 Course Info</button>
+    <button class="tab-btn" onclick="openTab(event, 'scholarship')">💰 Scholarships</button>
+    <button class="tab-btn" onclick="openTab(event, 'apply')">📝 Apply</button>
+    <div class="tab-indicator"></div>
+</div>
+
+<!-- ================= ADMISSION ================= -->
+<div id="admission" class="tab-content active">
+<h3>Admission Guide</h3>
+
+<div class="sub-tabs">
+<button onclick="showDetail('eligibility', this)">Eligibility</button>
+<button onclick="showDetail('documents', this)">Documents</button>
+<button onclick="showDetail('test', this)">Entry Test</button>
+</div>
+
+<div class="detail-box" id="eligibility">
+<h4>Eligibility Criteria</h4>
+<p>
+Students must have completed intermediate education with minimum required marks.
+<br>- Minumum: 50% marks in intermediate.
+<br>- 20% marks matric/equivalent.
+<br>- 30% marks in Entry Test.
+</p>
+</div>
+
+<div class="detail-box" id="documents">
+<h4>Required Documents</h4>
+<p>
+- CNIC/B-Form<br>
+- Academic transcripts<br>
+- Passport size photos<br>
+- Application form are required.
+</p>
+</div>
+
+<div class="detail-box" id="test">
+<h4>Entry Test</h4>
+<p>
+Entry Test includes sections:
+<br>- 20% Physics
+<br>- 20% Maths
+<br>- 10% English
+<br>- 20% General Knowledge
+<br>- 20% Analytical Reasoning
+<br>- 10% Islamic Studies
+<br><br>
+Prepare accordingly for Entry Test.
+</p>
+</div>
+</div>
+
+<!-- ================= STUDY ================= -->
+<div id="study" class="tab-content">
+<h3>Study Tips</h3>
+<ul>
+<li>Create study schedule</li>
+<li>Avoid distractions</li>
+<li>Use active learning</li>
+<li>Revise regularly</li>
+<li>Practice past papers</li>
+</ul>
+</div>
+
+<!-- ================= COURSE ================= -->
+<div id="course" class="tab-content">
+<h3>Course Information</h3>
+
+<div class="sub-tabs">
+<button onclick="showDetail('programs', this)">Programs Offered</button>
+<button onclick="showDetail('credits', this)">Course Information</button>
+<button onclick="showDetail('fees', this)">Fee Structure</button>
+
+</div>
+
+<div class="detail-box" id="programs">
+<p>
+<p>
+<h3>Undergraduate Programs:</h3>
+- Bachelor of Business Administration			<br>			
+- Bachelor of Science (Accounting and Finance)	<br>					
+- Bachelor of Science (Artificial Intelligence)	<br>				
+- Bachelor of Science (Business Analytics)		<br>				
+- Bachelor of Science (Civil Engineering)		<br>				
+- Bachelor of Science (Computer Engineering)	<br>					
+- Bachelor of Science (Computer Science)		<br>				
+- Bachelor of Science (Cyber Security)			<br>			
+- Bachelor of Science (Data Science)			<br>			
+- Bachelor of Science (Electrical Engineering)	<br>					
+- Bachelor of Science (Aviation Mangement)      
+<br><br> 
+ <h3>Postgraduate Programs:</h3>
+- Master of Business Administration			        <br>			
+- Master of Science (Applied Linguistics)				<br>		
+- Master of Science (Artificial Intelligence)			<br>			
+- Master of Science (Business Analytics)					<br>	
+- Master of Science (Civil Engineering)					<br>	
+- Master of Science (Computer Science)					<br>	
+- Master of Science (Cyber Security)					<br>	
+- Master of Science (Data Science)						<br>
+- Master of Science (Electrical Engineering)			<br>			
+- Master of Science (Mathematics)						<br>
+- Master of Science (Software Engineering)
+        </p>
+</p>
+</div>
+
+<div class="detail-box" id="credits">
+
+<table style="width:100%; margin-top:15px;">
+<tr>
+<th>Component</th>
+<th>Weightage</th>
+</tr>
+<tr>
+<td>Assignments & Quizzes</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Midterm</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>Final Exam</td>
+<td>50%</td>
+</tr>
+</table>
+
+<p>
+<b>Attendance Requirement:</b><br>
+- Minimum 75% attendance is required to sit in exams<br>
+</p>
+<h4>Academic Policies</h4>
+<p>
+Students must maintain minimum attendance and follow university rules for grading and assessments.
+</p>
+<br>
+<b>Grading System:</b><br>
+- A = 85% and above<br>
+- B = 70% - 84%<br>
+- C = 60% - 69%<br>
+- D = 50% - 59%<br>
+- F = Below 50%<br>
+
+</div>
+
+<div class="detail-box" id="fees">
+<br>
+<h3> Admission Fee</h3>
+<p>Admission Fee of Rs 30,000 is payable once at the time of admission. <br>If a graduate of this University is admitted to a higher degree program, <br>then admission fee is not payable again.
+<br>
+<h3>Security Deposit</h3>
+A refundable security deposit of Rs 20,000 is also payable at the time of admission.
+<br>
+Tuition Fee (w.e.f. Fall 2025 semester)
+Tuition Fee is payable in full before the start of each semester. It is subject to revision every year.<br> For the academic year 2026-27 the tuition fee per credit hour is as follows:
+</p>
+<br>
+
+<table style="width:100%">
+<tr><th>Program</th><th>Fees</th></tr>
+<tr><td>BBA/BS</td><td>111,000</td></tr>
+<tr><td>MBA/MS</td><td>171,000</td></tr>
+</table>
+<br>
+
+<h3>Student Activities Fund</h3>
+<p>
+To support co-curricular and extra-curricular activities a Student Activities Fund has been formed.
+<br> Students contribute Rs 2,500 (w.e.f. Fall 2024 semester) towards Students Activities Fund per semester.
+   </p>
+
+   <h3>Fee Refund Policy</h3>
+   <p>1. Admission Fee is non-refundable.<br>
+2. Security deposit is refundable at the time of completion of degree or closing of admission.<b>
+3. Tuition Fee is refunded in accordance with the revised guidelines of Higher Education Commission (HEC) and is applicable from 20-Dec-2024 (i.e. HEC Letter Issuance Date). </p>
+ 
+<br>
+</div>
+</div>
+
+<!-- ================= SCHOLARSHIP ================= -->
+<div id="scholarship" class="tab-content">
+    <h3>Scholarship Details</h3>
+
+<div class="sub-tabs">
+<button onclick="showDetail('meritDetail', this)">Merit-Based</button>
+<button onclick="showDetail('governmentDetail', this)">Government-Based</button>
+</div>
+
+<div class="detail-box" id="meritDetail">
+<h2>Merit Scholarships for Bachelor Students</h2>
+        <p>
+Merit scholarship is awarded to the Top Three position holders of each Examination Board in the year of admission.
+<br>
+Scholarship is also offered to top three position holders in the merit list of NU admission merit list.
+<br>
+This scholarship is for four years of un-interrupted studies with full course load and is equal to the full tuition fee.<br> Continuation of merit scholarship is subject to maintaining semester GPA of 3.0 or higher.
+       </p>
+<br>
+    <h2>HEC Scholarships for MS and PhD students</h2>
+       <p>
+The Higher Education Commission (HEC) provides liberal scholarships to students desirous of studying for the MS and PhD degrees at this university.<br> The scholarship covers tuition fee, monthly stipend and book allowance.
+       </p>
+</div>
+
+<div class="detail-box" id="governmentDetail">
+<h2>Punjab Educational Endowment Fund (PEEF) Scholarships</h2>
+        <p>
+The Government of Punjab gives 42 scholarships to indigent students having domicile of Punjab.<br>
+ Newly admitted students in any campus of the university can apply for this scholarship.
+<br>The scholarship is for 4-year undergraduate studies and covers some portion of the tuition fee. <br>
+The remaining tuition fee can be given by the University as Qarz-e-Hasna.
+<br>
+
+<h2>Sindh Government Endowment Board Scholarships</h2>
+
+The Sindh Government offers scholarships to students of Karachi campus on need-cum-merit for both under-graduate and graduate studies.<br>
+ The scholarship covers full tuition fee for entire duration of the program, renewable every year. The quota for students from rural sector is 60%, and the<br>
+remaining 40% is for the students from urban sector. About 25 new scholarships are offered every year under this scheme.
+<br>
+
+<h2>Khyber Pakhtunkhwa Education Foundation Scholarship</h2>
+The Khyber Pakhtunkhwa government offers scholarships to students of Peshawar campus on need-cum-merit to BS and MS studies with equal male to female ratio.<br>
+ The scholarship covers 80% of the tuition fees for the entire duration of the program. Interested students can apply online <br>
+ on KPEF website directly after annual call is circulated, following which they will be interviewed on campus.
+<br>
+
+<h2>Baluchistan Government Endowment Board Scholarship</h2>
+Baluchistan Government offers scholarships to students of Karachi campus on need-cum-merit for both under-graduate and graduate studies.<br> 
+The scholarship covers full tuition fee for entire duration of the program, renewable every year.
+ </p>
+</div>
+</div>
+
+
+<!-- ================= APPLY ================= -->
+<div id="apply" class="tab-content">
+    <h3>Information regarding Admission Test</h3>
+    <p>Information on various Admission Tests is available on the University’s admission web-site.
+
+The online admission test is taken on a computer.<br>
+The candidate should be familiar with the use of mouse and the keyboard. Each candidate is given a different 
+examination. The sections of a test (English, Analytical skills, Math etc) appear in a random sequence.<br> Moreover,
+ questions related to different topics also appear before the candidate in a random sequence. <br>In each section, a candidate
+ can move forward and backwards to review the responses selected. The candidate can change his or her response to any question
+  within the current section.<br>
+Each section of the admission test has a fixed duration.<br>Each section is timed
+ independently and time saved in one section is not carried forward to the next sections.<br> At the end of the test,
+  a summary of the results is displayed on screen. The duration of the Online Admission Test is between two and three hours.
+
+<br>Applicants should reach the test centre on the date and time specified on the admit card.<br> Latecomers will not be
+ allowed to take the test. Applicants should not bring anything to the test centre except their Admit Cards.<br> No applicant will be allowed to take the test without an endorsed Admit Card. The Admission Test is held at all campuses of the University</p>
+ <br>
+    <h3>How to Apply</h3>
+    <p>Click below to fill the application form.</p>
+
+    <a href="apply.html" class="apply-btn">Apply Now</a>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Student Guide Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

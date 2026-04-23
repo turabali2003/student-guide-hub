@@ -1,0 +1,313 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #1e1e1e;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f2e;
+    color: white;
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d4ff;
+    border-bottom: 2px solid #00d4ff;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 90vh;
+    background:url('https://t4.ftcdn.net/jpg/06/51/44/67/360_F_651446718_ZIHGEFxdN1ZSP2hVmtembHIpShrOUo3e.jpg') no-repeat center center/cover; ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero button {
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #0072ff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #1f1f2e;
+    color: white;
+}
+
+/* ================= CARDS ================= */
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.card.active .card-content {
+    display: block;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    padding: 50px;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background-color: #a1bcdb;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: #1f1f2e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ================= TABS ================= */
+.tabs-section {
+    padding: 60px;
+    text-align: center;
+    background-color: #a1bcdb;
+}
+
+/* Tabs container */
+.tabs {
+    display: inline-flex;
+    background: #ffffff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Tab buttons */
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.tab-btn:hover {
+    background: #e3f2fd;
+    color: #0072ff;
+}
+
+.tab-btn.active {
+    background: #a1bcdb;
+    color: white;
+}
+
+/* indicator removed look cleaner */
+.tab-indicator {
+    display: none;
+}
+
+/* TAB CONTENT */
+.tab-content {
+    display: none;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ================= SUB TABS ================= */
+.sub-tabs button {
+    margin: 5px;
+    padding: 8px 15px;
+    border: none;
+    background: #e3f2fd;
+    color: #1f1f2e;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub-tabs button:hover {
+    background: #0072ff;
+    color: white;
+}
+
+/* DETAIL BOX */
+.detail-box {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f5f7fa;
+}
+
+.detail-box.active {
+    display: block;
+}
+
+/* ================= CONTACT EXTRA ================= */
+.alt-contact {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    background: #a1bcdb;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.alt-contact a {
+    color: #0e4a94;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.alt-contact a:hover {
+    color: #158eaf;
+    text-decoration: underline;
+}
+
+/* ================= ANIMATION ================= */
+.tab-content,
+.card,
+.detail-box {
+    animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+.about {
+    padding: 100px;
+    max-width: 1700px;
+    margin: auto;
+    background: url('data:image/jpeg;base64,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') no-repeat center center/cover;;color: white;
+    border-radius: 0px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card {
+    background: #7a92a8;
+    padding: 100px;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 700px;
+}
+/* Smooth transitions */
+a, button, .card {
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #007BFF;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Card hover (if you use cards) */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Better headings */
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+/* Paragraph spacing */
+p {
+    line-height: 1.6;
+}

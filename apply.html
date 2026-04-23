@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.form-container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.section-title {
+    background: #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Student Guide Hub</h1>
+</header>
+
+<div class="form-container">
+
+<div class="form-title">
+    <h2>STUDENT GUIDE HUB</h2>
+    <p>APPLICATION FORM FOR ADMISSION</p>
+</div>
+
+<!-- PERSONAL INFO -->
+<table>
+<tr class="section-title"><td colspan="4">Personal Information</td></tr>
+
+<tr>
+<td>Name</td>
+<td><input type="text"></td>
+<td>Gender</td>
+<td>
+<select>
+<option>Male</option>
+<option>Female</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Father's Name</td>
+<td><input type="text"></td>
+<td>CNIC</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><input type="date"></td>
+<td>Nationality</td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td colspan="3"><input type="text"></td>
+</tr>
+</table>
+
+<!-- ACADEMIC INFO -->
+<table>
+<tr class="section-title"><td colspan="5">Academic Information</td></tr>
+
+<tr>
+<th>Qualification</th>
+<th>Board/University</th>
+<th>Year</th>
+<th>Marks</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Matric</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Intermediate</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+</table>
+
+<!-- PROGRAM -->
+<table>
+<tr class="section-title"><td colspan="2">Program Selection</td></tr>
+
+<tr>
+<td>Select Program</td>
+<td>
+<select>
+<option>BBA</option>
+<option>BS Computer Science</option>
+<option>BS Artificial Intelligence</option>
+<option>BS Data Science</option>
+</select>
+</td>
+</tr>
+</table>
+
+<!-- CONTACT -->
+<table>
+<tr class="section-title"><td colspan="2">Contact Information</td></tr>
+
+<tr>
+<td>Email</td>
+<td><input type="email"></td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td><input type="text"></td>
+</tr>
+</table>
+
+<!-- DECLARATION -->
+<table>
+<tr class="section-title"><td>Declaration</td></tr>
+
+<tr>
+<td>
+I hereby declare that all the information provided is true and correct to the best of my knowledge.
+</td>
+</tr>
+</table>
+
+<button class="submit-btn" onclick="submitForm()">Submit Application</button>
+
+</div>
+
+<script>
+function submitForm() {
+    alert("Application Submitted Successfully!");
+}
+</script>
+
+</body>
+</html>
