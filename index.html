@@ -1,0 +1,130 @@
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Student Guide Hub</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font for premium look -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+       
+        <div class="logo-section">
+    <img src="logo.png" class="logo-img">
+    <span class="logo-text">Student Guide Hub</span>
+</div>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h2 class="main-heading">
+            INNOVATION. RELEVANCE. SUCCESS.
+        </h2>
+
+        <p class="sub-text">
+            Empowering students with knowledge, guidance, and opportunities.
+        </p>
+
+        <a href="resources.html" class="btn-primary">
+            Explore Resources →
+        </a>
+    </div>
+
+</section>
+
+<section class="stats">
+    <div><h3>100+</h3><p>Resources</p></div>
+    <div><h3>10+</h3><p>Programs</p></div>
+    <div><h3>5+</h3><p>Guides</p></div>
+</section>
+
+<section class="values-section">
+
+    <h2 class="section-title">Our Core Values</h2>
+    <p class="subtitle">
+        These values are the foundation of our platform and student success.
+    </p>
+
+    <div class="hex-wrapper">
+
+        <div class="hex-row">
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Integrity</h3>
+                    <p>Doing the right thing</p>
+                </div>
+            </div>
+
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Team Work</h3>
+                    <p>Working together</p>
+                </div>
+            </div>
+
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Excellence</h3>
+                    <p>Pursuit of best</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hex-row offset">
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Compassion</h3>
+                    <p>Care & support</p>
+                </div>
+            </div>
+
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Consultation</h3>
+                    <p>Harmony & discussion</p>
+                </div>
+            </div>
+
+            <div class="hex">
+                <div class="hex-inner">
+                    <h3>Accountability</h3>
+                    <p>Responsibility matters</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Student Guide Hub</p>
+</footer>
+
+</body>
+</html>

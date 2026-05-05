@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+
+<header>
+
+    <div class="logo-section">
+    <img src="logo.png" class="logo-img">
+    <span class="logo-text">Student Guide Hub</span>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="breadcrumb">
+    <a href="index.html">Home</a> > 
+    <span>About</span>
+</div>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Student Guide Hub helps students find all academic information in one place.
+        Our mission is to simplify university life through digital solutions.
+    </p>
+    <br>
+    <h3>Key Features</h3>
+<ul>
+    <li>Easy access to admission information</li>
+    <li>Organized study resources</li>
+    <li>Course and syllabus details</li>
+    <li>Scholarship information</li>
+    <li>Direct application system</li>
+</ul>
+</section>
+
+<footer>
+    <p>© 2026 Student Guide Hub</p>
+</footer>
+
+</body>
+</html>

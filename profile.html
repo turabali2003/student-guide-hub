@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<body class="profile-page"></body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<header class="navbar">
+    <div class="nav-container">
+
+<div class="logo-section">
+    <img src="logo.png" class="logo-img">
+    <span class="logo-text">Student Guide Hub</span>
+
+</div>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </div>
+</header>
+
+<div class="profile-container">
+
+    <h2>My Profile</h2>
+
+    <p><strong>Username:</strong> <span id="username"></span></p>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="text" id="program" placeholder="Your Program">
+
+    <button onclick="saveProfile()">Save</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

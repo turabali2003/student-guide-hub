@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<header>
+
+<div class="logo-section">
+    <img src="logo.png" class="logo-img">
+    <span class="logo-text">Student Guide Hub</span>
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="breadcrumb">
+    <a href="index.html">Home</a> > 
+    <span>Contact</span>
+</div>
+
+<section class="contact">
+    <h1>Contact Us</h1>
+    <br>
+   <h3> Connect with Student Guide Hub-your gateway to knowledge, innovation, and opportunity.</h3>
+<h4>We’re here to help! Whether you’re a prospective student, current student, parent, 
+  <br>  or partner, Student Guide Hub values your inquiries and feedback.
+<br> Our dedicated team is committed to providing you with the information and support you need.</h4>
+
+<br>
+<input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button onclick="sendMessage()">Send Message</button>
+</section>
+
+<div class="alt-contact">
+    <h2>Or Contact Us Via</h2>
+    <p>
+        Email: <a href="mailto:turabali019@gmail.com">turabali019@gmail.com</a><br>
+        Phone: <a href="tel:03175426803">0317-5426803</a>
+    </p>
+</div>
+
+</p>
+<footer>
+    <p>© 2026 Student Guide Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
